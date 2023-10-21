@@ -7,6 +7,14 @@ import 'css/homeCSS.css';
 function HomeContainer() {
     return (
         <Container>
+            <div className='wave -one'></div>
+            <div className='wave -two'></div>
+            <div className='wave -three'></div>
+
+            <div className='wave -one_second'></div>
+            <div className='wave -two_second'></div>
+            <div className='wave -three_second'></div>
+
             <Row className="justify-content-md-center">
                 <Col className="logo_container">
                     <Image src={logo} rounded className="logo_image"/>
@@ -39,7 +47,7 @@ function HomeContainer() {
                     <Col>
                         <div className="home_category_item_box">
                             <div>
-                            <a className="home_category_item" href="#Developer">Developer </a>
+                                <a className="home_category_item" href="#Developer">Developer </a>
                             </div>
                         </div>
                     </Col>

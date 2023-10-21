@@ -66,6 +66,7 @@ footer {
 
 html, body {
     height: 100%;
+    overflow: hidden;
 }
 
 #home_category_container{
@@ -166,3 +167,76 @@ html, body {
         transform: rotate(0deg);
     }
 }
+
+/* 물결 애니메이션*/
+#wrap{width: 100vw; height: 100vh; background: #ffffff;}
+.wave {
+    opacity: 0;
+    position: absolute;
+    top: -30%;
+    left:50%;
+    border: 3px solid #FFD400;
+    width: 100vh;
+    height: 100vh;
+    border-radius: 43%;
+    /*-webkit-animation: drift 3000ms infinite linear;*/
+    animation: one_drift 4000ms infinite linear 500ms;
+    z-index: -1;
+    transform:translate(-50%, 0%);
+}
+
+.wave.-three {
+    animation: three_drift 4000ms infinite linear 500ms;
+    border: 3px solid #EEE400;
+}
+
+.wave.-two {
+    animation: two_drift 4000ms infinite linear 500ms;
+    border: 3px solid #BBA400;
+}
+
+.-one_second{
+    animation: one_drift 4000ms infinite linear 2500ms;
+    border: 3px solid #EEE400;}
+.-two_second{
+    animation: two_drift 4000ms infinite linear 2500ms;
+    border: 3px solid #FFD400;}
+.-three_second{
+    animation: three_drift 4000ms infinite linear 2500ms;
+    border: 3px solid #BBA400;}
+
+@keyframes one_drift{
+    from {
+        transform: translate(-50%, 0%) rotate(0deg) scale(0,0);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-50%, 0%) rotate(360deg) scale(2,2);
+        opacity: 0;
+    }
+}
+
+@keyframes two_drift{
+    0%{
+        transform: translate(-50%, 0%) rotate(0deg) scale(0,0);
+        opacity: 1;    }
+    80%{
+        transform: translate(-50%, 0%) rotate(360deg) scale(2,2);
+        opacity: 0;    }
+    100%{
+        transform: translate(-50%, 0%) rotate(360deg) scale(2,2);
+        opacity: 0;    }
+}
+
+@keyframes three_drift{
+    0%{
+        transform: translate(-50%, 0%) rotate(0deg) scale(0,0);
+        opacity: 1;    }
+    60%{
+        transform: translate(-50%, 0%) rotate(360deg) scale(2,2);
+        opacity: 0;}
+    100%{
+        transform: translate(-50%, 0%) rotate(360deg) scale(2,2);
+        opacity: 0; }
+}
+
