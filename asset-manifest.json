@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e7b12b28.css",
-    "main.js": "/static/js/main.e5e3a58f.js",
-    "static/js/787.3b425f50.chunk.js": "/static/js/787.3b425f50.chunk.js",
-    "static/media/soundcloud_img.png": "/static/media/soundcloud_img.a19fa2c764eeafbcb487.png",
-    "index.html": "/index.html",
-    "main.e7b12b28.css.map": "/static/css/main.e7b12b28.css.map",
-    "main.e5e3a58f.js.map": "/static/js/main.e5e3a58f.js.map",
-    "787.3b425f50.chunk.js.map": "/static/js/787.3b425f50.chunk.js.map"
+    "main.css": "/othebell_web/static/css/main.e7b12b28.css",
+    "main.js": "/othebell_web/static/js/main.460ee7bf.js",
+    "static/js/787.3b425f50.chunk.js": "/othebell_web/static/js/787.3b425f50.chunk.js",
+    "static/media/soundcloud_img.png": "/othebell_web/static/media/soundcloud_img.a19fa2c764eeafbcb487.png",
+    "index.html": "/othebell_web/index.html",
+    "main.e7b12b28.css.map": "/othebell_web/static/css/main.e7b12b28.css.map",
+    "main.460ee7bf.js.map": "/othebell_web/static/js/main.460ee7bf.js.map",
+    "787.3b425f50.chunk.js.map": "/othebell_web/static/js/787.3b425f50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7b12b28.css",
-    "static/js/main.e5e3a58f.js"
+    "static/js/main.460ee7bf.js"
   ]
 }
