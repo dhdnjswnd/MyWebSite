@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/othebell_web/static/css/main.e7b12b28.css",
-    "main.js": "/othebell_web/static/js/main.65b4a65e.js",
+    "main.js": "/othebell_web/static/js/main.ca9cd6eb.js",
     "static/js/787.3b425f50.chunk.js": "/othebell_web/static/js/787.3b425f50.chunk.js",
     "static/media/soundcloud_img.png": "/othebell_web/static/media/soundcloud_img.a19fa2c764eeafbcb487.png",
     "index.html": "/othebell_web/index.html",
     "main.e7b12b28.css.map": "/othebell_web/static/css/main.e7b12b28.css.map",
-    "main.65b4a65e.js.map": "/othebell_web/static/js/main.65b4a65e.js.map",
+    "main.ca9cd6eb.js.map": "/othebell_web/static/js/main.ca9cd6eb.js.map",
     "787.3b425f50.chunk.js.map": "/othebell_web/static/js/787.3b425f50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7b12b28.css",
-    "static/js/main.65b4a65e.js"
+    "static/js/main.ca9cd6eb.js"
   ]
 }
