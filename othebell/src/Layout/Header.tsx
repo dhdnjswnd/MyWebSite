@@ -7,41 +7,45 @@ import tistoryLogo from "../assets/img/tistory_logo_black.png"
 import React from "react";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import {Link} from 'react-router-dom';
 
 
 function Header() {
 
-interface NavItemProps {
-  link: string;
-  src : string;
-  tooltipString:string;
-  className?:string;
-}
-    const NavItem : React.FC<NavItemProps> =
-({
-                         link,
-                         src,
-                         tooltipString,
-    className=""}) => (
-        <Nav.Item className={className}>
-            <Nav.Link href={link}>
-                <OverlayTrigger
-                    placement="bottom"
-                    delay={{show: 250, hide: 400}}
-                    overlay={<Tooltip>{tooltipString}</Tooltip>}
-                    defaultShow={true}>
-                    <Image src={src} rounded
-                           className="link_logo_image"/></OverlayTrigger>
-            </Nav.Link>
-        </Nav.Item>
-    );
+    interface NavItemProps {
+        link: string;
+        src: string;
+        tooltipString: string;
+        className?: string;
+    }
+
+    const NavItem: React.FC<NavItemProps> =
+        ({
+             link,
+             src,
+             tooltipString,
+             className = ""
+         }) => (
+            <Nav.Item className={className}>
+                <Nav.Link href={link}>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{show: 250, hide: 400}}
+                        overlay={<Tooltip>{tooltipString}</Tooltip>}
+                        defaultShow={true}>
+                        <Image src={src} rounded
+                               className="link_logo_image"/></OverlayTrigger>
+                </Nav.Link>
+            </Nav.Item>
+        );
     return (
         <>
             <Navbar className="HomeTitle">
                 <Container className="justify-content-end">
                 </Container>
                 <Container className="justify-content-center">
-                    <Navbar.Brand href="#home"><h2><b>OTHEBELL</b></h2></Navbar.Brand>
+                    <Navbar.Brand><Link to="/home" style={{textDecoration: 'none', color:"black"}}><h2><b>OTHEBELL</b></h2>
+                    </Link></Navbar.Brand>
                 </Container>
                 <Container id="header_right_fixed" className="justify-content-end">
                     <NavItem link="https://github.com/dhdnjswnd" src={githubLogo} tooltipString="깃헙으로 바로가기"></NavItem>

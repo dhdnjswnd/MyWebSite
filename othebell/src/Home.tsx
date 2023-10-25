@@ -2,9 +2,12 @@ import React from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap';
 import logo from 'assets/img/BellIcon.png' // relative path to image
 import 'css/homeCSS.css';
+import {Link} from 'react-router-dom';
 
 
 function HomeContainer() {
+    // @ts-ignore
+    // @ts-ignore
     return (
         <Container>
             <div className='wave -one'></div>
@@ -27,13 +30,11 @@ function HomeContainer() {
                 <h2><b>오원종</b>입니다</h2>
             </Row>{
             <Row className="justify-content-md-center">
-                <Col xs>
-                    <br></br>
-                    <div className='content_center'>
-                        <div className='division-line'></div>
-                    </div>
-                    <br></br>
-                </Col>
+                <br></br>
+                <div className='content_center'>
+                    <div className='division-line'></div>
+                </div>
+                <br></br>
             </Row>
         }
             <Row className="justify-content-md-center">
@@ -45,21 +46,25 @@ function HomeContainer() {
             <Row className="justify-content-center">
                 <div id="home_category_container">
                     <Col>
-                        <div className="home_category_item_box">
-                            <div>
-                                <a className="home_category_item" href="#Developer">Developer </a>
+                        <Link className="home_category_item_box" to={"/developer"} style={{textDecoration:'none'}}>
+                            <div className='home_category_item'>
+                                Developer
                             </div>
-                        </div>
+                        </Link>
                     </Col>
                     <Col>
-                        <div className="home_category_item_box">
-                            <a className="home_category_item" href="#Musician">Musician </a>
-                        </div>
+                        <Link className="home_category_item_box" to={"/musician"} style={{textDecoration:'none'}}>
+                            <div className='home_category_item'>
+                                Musician
+                            </div>
+                        </Link>
                     </Col>
                     <Col>
-                        <div className="home_category_item_box">
-                            <a className="home_category_item" href="#Other">Other </a>
-                        </div>
+                        <Link className="home_category_item_box" to={"/other"} style={{textDecoration:'none'}}>
+                            <div className='home_category_item'>
+                                Other
+                            </div>
+                        </Link>
                     </Col>
                 </div>
             </Row>
